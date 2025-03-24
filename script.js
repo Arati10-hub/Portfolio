@@ -4,11 +4,22 @@ const sections=document.querySelectorAll('section');
 const menuIcon=document.querySelector(' #menu-icon');
 const navbar=document.querySelector(' header nav');
 
-document.getElementById("downloadCV").addEventListener("click", function () {
-    let cvUrl = "https://drive.google.com/uc?export=download&id=14acQWSuH-3VXcN5iPfR7t4fret1zobBn";
-    window.location.href = cvUrl;
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("downloadCV").addEventListener("click", function () {
+      let cvUrl = "https://drive.google.com/uc?export=download&id=14acQWSuH-3VXcN5iPfR7t4fret1zobBn";
+      
+      // Create a hidden `a` tag and trigger the download
+      let link = document.createElement("a");
+      link.href = cvUrl;
+      link.download = "Arati_Lachure_CV.pdf"; // Set filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
   });
-</script>
 
 
 
