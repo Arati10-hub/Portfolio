@@ -5,8 +5,11 @@ const menuIcon=document.querySelector(' #menu-icon');
 const navbar=document.querySelector(' header nav');
 
 document.getElementById("downloadCV").addEventListener("click", function () {
-  window.open("https://raw.githubusercontent.com/Arati10-hub/Portfolio/main/Arati_Lachure_CV.pdf", "_blank");
-});
+    let cvUrl = "https://drive.google.com/uc?export=download&id=14acQWSuH-3VXcN5iPfR7t4fret1zobBn";
+    window.location.href = cvUrl;
+  });
+</script>
+
 
 
 menuIcon.addEventListener('click',()=>{
