@@ -4,6 +4,9 @@ const sections=document.querySelectorAll('section');
 const menuIcon=document.querySelector(' #menu-icon');
 const navbar=document.querySelector(' header nav');
 
+document.getElementById("downloadCV").addEventListener("click", function () {
+  window.open("https://raw.githubusercontent.com/Arati10-hub/Portfolio/main/Arati_Lachure_CV.pdf", "_blank");
+});
 
 
 menuIcon.addEventListener('click',()=>{
